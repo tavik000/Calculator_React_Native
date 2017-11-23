@@ -5,7 +5,7 @@ import {
     Text,
     TouchableHighlight
 } from 'react-native';
-
+let math = require('mathjs');
 
 
 export default class Calculator extends Component<{}> {
@@ -21,13 +21,12 @@ export default class Calculator extends Component<{}> {
                 [".", 0, "⌫"]
             ],
             //operators
-            col: ['÷', 'x', '-', '+', '='],
+            col: ['^','÷', 'x', '-', '+', '='],
             //expression string
             expression: '',
             result: '',
         };
     }
-
 
     // For the input display
     _onPressButton = (value) => {
@@ -50,8 +49,9 @@ export default class Calculator extends Component<{}> {
             case '=':
                 expression = expression.replace("x", "*");
                 expression = expression.replace("÷", "/");
+
                 try {
-                    result = eval(expression);
+                    result = math.eval(expression);
                 } catch (e) {
                     result = 'Error';
                 }
@@ -258,7 +258,7 @@ const styles = StyleSheet.create({
     },
     operatorEachRow: {
         width: 93.75,
-        height: 83.4,
+        height: 69.5,
         justifyContent: 'center',
         borderColor: '#828282',
         borderWidth: 1,
