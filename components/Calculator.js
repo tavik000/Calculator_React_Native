@@ -24,6 +24,7 @@ export default class Calculator extends Component<{}> {
             col: ['^','÷', 'x', '-', '+', '='],
             //expression string
             expression: '',
+            //result string
             result: '',
         };
     }
