@@ -42,6 +42,7 @@ This is a standard React Native project(`react-native init`).
 ## Screenshots
 <img src="https://github.com/tavik000/Calculator_React_Native/raw/master/Screenshots/scr00.png" width="360" height="700" />
 <img src="https://github.com/tavik000/Calculator_React_Native/raw/master/Screenshots/scr01.png" width="360" height="700" />
+<img src="https://github.com/tavik000/Calculator_React_Native/raw/master/Screenshots/scr02.png" width="360" height="700" />
 
 
 -----
